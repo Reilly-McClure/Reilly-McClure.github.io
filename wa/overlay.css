@@ -1,0 +1,17 @@
+.overlay1{
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 10%; /* Full width (cover the whole page) */
+    height: 30%; /* Full height (cover the whole page) */
+    float: left;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+.overlay2{
+    font-family:"times new roman", Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20em;
+    color: white;
+}
