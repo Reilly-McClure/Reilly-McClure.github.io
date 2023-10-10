@@ -28,19 +28,29 @@ body{
 
 #grid-parent{
     display:grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(3,10vw);
+=======
+    grid-template-columns: repeat(3,33vw);
+>>>>>>> d2debd05b21597fc72d7a2f42da2e5ec0df6b7ca
 }
 
 #grid-parent h1{
     background-color: grey;
+<<<<<<< HEAD
     padding:2vw 5vh;
     margin:0.1vw;
+=======
+    padding:3vw 5vh;
+    margin:5vw;
+>>>>>>> d2debd05b21597fc72d7a2f42da2e5ec0df6b7ca
     
 }
 #no0{
     grid-column: 2/3;
 }
 #no1{
+<<<<<<< HEAD
     text-align: center;
 }
 #no2{
@@ -72,5 +82,31 @@ body{
 }
 #no9{
     text-align: center;
+=======
+
+}
+#no2{
+
+}
+#no3{
+
+}
+#no4{
+
+}
+#no5{
+
+}
+#no6{
+
+}
+#no7{
+
+}
+#no8{
+
+}
+#no9{
+>>>>>>> d2debd05b21597fc72d7a2f42da2e5ec0df6b7ca
 
 }

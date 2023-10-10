@@ -1,5 +1,9 @@
 #narrowScreen{
+<<<<<<< HEAD
     background-color: purple;
+=======
+    background-color: green;
+>>>>>>> d2debd05b21597fc72d7a2f42da2e5ec0df6b7ca
 }
 #wideScreen{
     background-color: red;
@@ -11,6 +15,7 @@
     background-color: lavender;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 600px) {
     #narrowScreen{
         background-color: green;
@@ -32,5 +37,10 @@
 @media only screen and (min-height: 800px) {
     #tallScreen{
         background-color: orange;
+=======
+@media only screen and (max-width: 600px) {
+    #narrowScreen{
+        background-color: purple;
+>>>>>>> d2debd05b21597fc72d7a2f42da2e5ec0df6b7ca
     }
 }
