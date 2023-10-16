@@ -21,6 +21,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display: flex;
   }
   
   nav {
@@ -32,6 +33,8 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
   }
   
   nav a {
@@ -39,19 +42,125 @@ body {
     text-decoration: none;
     padding: .5em 1em;
   }
-  
-  .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
 
   .feature {
-      width: 200px;
+    width: 200px;
+}
+  .leftbar p{
+    width: 100%;
+    display:flex;
+    flex:1;
+    flex-wrap: wrap ;
   }
 
-  @media screen and (max-width: 500px) {
-    .grid {
-      width: 100%;
-    }
+  .rightbar p{
+    width: 100%;
+    display:flex;
+    flex:2;
   }
+  .photos {
+    row-gap: 1px;
+    column-gap: 1px;
+    list-style: none;
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: repeat(2);
+  }
+
+  .col1{
+    display:flex;
+    max-width: auto;
+    flex-direction: column;
+    grid-column: 1;
+  }
+  
+  .col2{
+    display:flex;
+    max-width: auto;
+    flex-direction: column;
+    grid-column: 2;
+  }
+
+
+  @media screen and (max-width: 500px) {
+    body {
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  
+    .logo {
+      font-size: 200%;
+      padding: 50px 20px;
+      margin: 0 auto;
+      max-width: 980px;
+    }
+  
+    .grid {
+      margin: 0 auto;
+      padding: 0 20px;
+      max-width: 980px;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    nav {
+      background-color: #000;
+      padding: .5em;
+    }
+  
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: .5em 1em;
+    }
+
+    .feature {
+      width: 200px;
+    }
+    .leftbar p{
+      width: 100%;
+      display:flex;
+      flex-wrap: wrap ;
+    }
+
+    .rightbar p{
+      width: 100%;
+      display:flex;
+    }
+    .photos {
+      row-gap: 1px;
+      column-gap: 1px;
+      list-style: none;
+      max-width: 100%;
+      display:grid;
+      grid-template-columns: repeat(2);
+    }
+
+    .col1{
+      display:flex;
+      max-width: auto;
+      flex-direction: column;
+      grid-column: 1;
+    }
+  
+    .col2{
+      display:flex;
+      max-width: auto;
+      flex-direction: column;
+      grid-column: 2;
+    }     
+}
