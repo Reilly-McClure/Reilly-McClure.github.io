@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: lightgreen;
+            height: 100px;
+            width: 150px;
+            border: 2px solid green;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .press{
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: lightgreen;
+            height: 100px;
+            width: 150px;
+            border: 2px solid green;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <button type = "button">Player 1: Reilly</button>
+    <div id = "press" type = "button">Press Me</div>
+
+    <script>
+        const button = document.querySelector("button")
+        const press = document.getElementById("press")
+
+
+        button.addEventListener('click', updateName);
+        press.addEventListener('click', updateButt)
+
+        function updateName() {
+            let name = 10;
+            console.log("The function ran correctly")
+            console.log(name);
+            button.innerHTML = `<h1>Hello!</h1>`
+        }
+
+        function updateButt() {
+            press.textContent = `Pressed!`
+        }
+
+    </script>
+
+</body>
+</html>
