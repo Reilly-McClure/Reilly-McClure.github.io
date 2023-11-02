@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA 10</title>
+    <style>
+         body{
+            background-color: lightblue;
+        }
+        button{
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: lightgreen;
+            height: 100px;
+            width: 150px;
+            border: 2px solid green;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <button type = "button">Click this button</button>
+    <br>
+    <br>
+    <p>press a keyboard key</p>
+
+    <script>
+        const button = document.querySelector("button")
+        const body = document.querySelector("body")
+
+        button.addEventListener('click', updateName);
+        body.addEventListener('keydown', changeBackgroundColor);
+
+        function updateName() {
+            let name = 10;
+            button.innerHTML = `<h1>Clicked!</h1>`
+        }
+
+        function changeBackgroundColor() {
+            const color = lightpurple;
+            body.innerHTML = `<style> body{background-color: lightpurple;} </style `
+            
+        }
+    </script>
+
+</body>
+</html>
